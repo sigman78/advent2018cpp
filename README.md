@@ -6,7 +6,7 @@ Lazy attempt to check out Erics' [ranges-v3](https://github.com/ericniebler/rang
 
 ## Build instructions
 
-Fairly standard CMake based setup.
+Fairly standard CMake based setup. Note that the ranges library currently does not compile under MSVC.
 
 ```
 mkdir build && cd build && cmake .. && cmake --build .
