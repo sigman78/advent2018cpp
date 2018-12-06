@@ -11,9 +11,7 @@ int main(int argc, char* argv[])
 {
     ifstream fin("day01a.txt");
 
-    auto to_int = [](const auto& s){ return stoi(s); };
-    int res = ranges::accumulate(getlines(fin) | view::transform(to_int)
-            , 0);
+    int res = ranges::accumulate(istream_range<int>(fin), 0);
            
     cout << res << "\n";
 }
